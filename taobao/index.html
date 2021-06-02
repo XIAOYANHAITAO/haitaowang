@@ -1,0 +1,27 @@
+<!DOCTYE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+                <link rel="stylesheet" href="https://www.jq22.com/demo/pagination20160204/pagination.css">
+	</head>
+	
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://www.jq22.com/demo/pagination20160204/jquery.pagination.js"></script>
+
+	<body>
+
+	    <div class="M-box m-style">憨憨是张海涛</div>
+	</body>
+</html>
+<script >
+
+
+        $('.M-box').pagination({
+            callback: function (api) {
+                $('.now').text(api.getCurrent());
+            }
+        }, function (api) {
+            $('.now').text(api.getCurrent());
+        }); 
+</script>
